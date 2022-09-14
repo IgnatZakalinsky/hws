@@ -7,6 +7,16 @@ type GreetingContainerPropsType = {
     addUserCallback: any // need to fix any
 }
 
+export const pureAddUser = (name: any, setError: any, setName: any, addUserCallback: any) => {
+    // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
+}
+
+export const pureOnBlur = (name: any, setError: any) => { // если имя пустое - показать ошибку
+}
+
+export const pureOnEnter = (e: any, addUser: any) => { // если нажата кнопка Enter - добавить
+}
+
 // более простой и понятный для новичков
 // function GreetingContainer(props: GreetingPropsType) {
 
@@ -20,33 +30,24 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const [error, setError] = useState<any>('') // need to fix any
 
     const setNameCallback = (e: any) => { // need to fix any
-        setName(e.currentTarget.value) // need to fix
+        setName('some name') // need to fix
 
         error && setError('')
     }
-    const addUser = () => { // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
-        if (!name.trim()) {
-            setError('name is required!')
-        } else {
-            // addUserCallback(name)
-            setName('')
-        }
+    const addUser = () => {
+        pureAddUser(name, setError, setName, addUserCallback)
     }
 
-    const onBlur = () => { // если имя пустое - показать ошибку
-        if (!name.trim()) {
-            setError('name is required!')
-        }
+    const onBlur = () => {
+        pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: any) => { // если нажата кнопка Enter - добавить
-        if (e.key === 'Enter') {
-            addUser()
-        }
+    const onEnter = (e: any) => {
+        pureOnEnter(e, addUser)
     }
 
-    const totalUsers = users.length // need to fix
-    const lastUserName = users[users.length - 1]?.name // need to fix
+    const totalUsers = 0 // need to fix
+    const lastUserName = 'some name' // need to fix
 
     return (
         <Greeting
