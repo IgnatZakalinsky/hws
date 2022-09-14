@@ -25,7 +25,7 @@ function Affair(props: AffairPropsType) {
         >
             <div id={'hw2-name-' + props.affair._id} className={nameClass}>
                 {/*создаёт студент*/}
-                {props.affair.name}
+                {/*{props.affair.name}*/}
                 {/**/}
             </div>
             <div id={'hw2-priority-' + props.affair._id} hidden>
@@ -37,7 +37,7 @@ function Affair(props: AffairPropsType) {
             <button
                 id={'hw2-button-delete-' + props.affair._id}
                 className={buttonClass}
-                onClick={deleteCallback} // need to fix
+                // onClick={deleteCallback} // need to fix
             >
                 {/*текст кнопки могут изменить студенты*/}
                 X
