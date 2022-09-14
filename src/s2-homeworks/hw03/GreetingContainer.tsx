@@ -20,12 +20,12 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const [error, setError] = useState<any>('') // need to fix any
 
     const setNameCallback = (e: any) => { // need to fix any
-        setName(e.currentTarget.value.trim()) // need to fix
+        setName(e.currentTarget.value) // need to fix
 
         error && setError('')
     }
     const addUser = () => { // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
-        if (!name) {
+        if (!name.trim()) {
             setError('name is required!')
         } else {
             // addUserCallback(name)
@@ -34,7 +34,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const onBlur = () => { // если имя пустое - показать ошибку
-        if (!name) {
+        if (!name.trim()) {
             setError('name is required!')
         }
     }
