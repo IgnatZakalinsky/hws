@@ -21,9 +21,8 @@ code {
 }
 
 [data-theme='1'] {
-
-    --background: #FFFFFF;
     --color: #000000;
+    --background: #FFFFFF;
 }
 
 [data-theme='2'] {
@@ -34,7 +33,6 @@ code {
 [data-theme='3'] {
     --color: #FFFFFF;
     --background: #212A34;
-
 }
 
 html {
