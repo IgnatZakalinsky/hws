@@ -28,7 +28,6 @@ type SuperEditableSpanType = Omit<DefaultInputPropsType, 'type'> & {
 
 const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     {
-        id,
         autoFocus,
         onBlur,
         onEnter,
@@ -66,7 +65,6 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
         <>
             {editMode ? (
                 <SuperInputText
-                    id={id}
                     autoFocus={autoFocus || true}
                     onBlur={onBlurCallback}
                     onEnter={onEnterCallback}
@@ -81,7 +79,6 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                         alt={'edit'}
                     />
                     <span
-                        id={id ? id + '-span' : undefined}
                         onDoubleClick={onDoubleClickCallBack}
                         className={spanClassName}
                         {...restSpanProps}

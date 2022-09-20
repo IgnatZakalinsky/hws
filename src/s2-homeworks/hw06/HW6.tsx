@@ -34,7 +34,8 @@ const HW6 = () => {
                         value={value}
                         onChangeText={setValue}
                         spanProps={{
-                            defaultText: 'enter text...'
+                            id: 'hw6-editable-span',
+                            defaultText: 'enter text...',
                         }}
                     />
                 </div>
