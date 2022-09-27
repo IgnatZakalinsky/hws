@@ -19,23 +19,3 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/*[data-theme='1'] {*/
-/*    --color: #000000;*/
-/*    --background: #FFFFFF;*/
-/*}*/
-
-/*[data-theme='2'] {*/
-/*    --color: #000000;*/
-/*    --background: #DDEEFF;*/
-/*}*/
-
-/*[data-theme='3'] {*/
-/*    --color: #FFFFFF;*/
-/*    --background: #212A34;*/
-/*}*/
-
-/*html {*/
-/*    background-color: var(--background);*/
-/*    color: var(--color);*/
-/*}*/
